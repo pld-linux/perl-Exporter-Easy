@@ -41,7 +41,7 @@ znaczników, wiêc nie trzeba siê ju¿ martwiæ o wype³nianie @EXPORT_OK.
 %build
 %{__perl} -pi -e "s/INSTALLDIRS => 'perl',//" Makefile.PL
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
