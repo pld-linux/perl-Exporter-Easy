@@ -9,7 +9,7 @@ Summary:	Exporter::Easy - takes the drudgery out of exporting symbols
 Summary(pl):	Exporter::Easy - przejmuj±cy harówkê eksportowania symboli
 Name:		perl-Exporter-Easy
 Version:	0.15
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
