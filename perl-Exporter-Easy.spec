@@ -5,16 +5,16 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Exporter
 %define	pnam	Easy
-Summary:	Exporter::Easy - Takes the drudgery out of Exporting symbols
+Summary:	Exporter::Easy - takes the drudgery out of exporting symbols
 Summary(pl):	Exporter::Easy - przejmuj±cy harówkê eksportowania symboli
 Name:		perl-Exporter-Easy
 Version:	0.15
 Release:	1
-License:	?
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,8 +39,7 @@ znaczników, wiêc nie trzeba siê ju¿ martwiæ o wype³nianie @EXPORT_OK.
 
 %build
 %{__perl} -pi -e "s/INSTALLDIRS => 'perl',//" Makefile.PL
-%{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -57,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README CHANGES
-%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_sitelib}/%{pdir}/*.pm
 %{_mandir}/man3/*
