@@ -5,12 +5,12 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Exporter
 %define	pnam	Easy
-Summary:	Exporter::Easy - Takes the drudgery out of Exporting symbols
+Summary:	Exporter::Easy - takes the drudgery out of exporting symbols
 Summary(pl):	Exporter::Easy - przejmuj±cy harówkê eksportowania symboli
 Name:		perl-Exporter-Easy
 Version:	0.15
 Release:	1
-License:	?
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
