@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Exporter
-%define	pnam	Easy
+%define		pdir	Exporter
+%define		pnam	Easy
 Summary:	Exporter::Easy - takes the drudgery out of exporting symbols
 Summary(pl):	Exporter::Easy - przejmuj±cy harówkê eksportowania symboli
 Name:		perl-Exporter-Easy
