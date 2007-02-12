@@ -6,7 +6,7 @@
 %define		pdir	Exporter
 %define		pnam	Easy
 Summary:	Exporter::Easy - takes the drudgery out of exporting symbols
-Summary(pl):	Exporter::Easy - przejmuj±cy harówkê eksportowania symboli
+Summary(pl.UTF-8):   Exporter::Easy - przejmujÄ…cy harÃ³wkÄ™ eksportowania symboli
 Name:		perl-Exporter-Easy
 Version:	0.16
 Release:	1
@@ -28,13 +28,13 @@ that uses Exporter.
 It also allows you to define tags in terms of other tags and you no
 longer have to worry about filling in @EXPORT_OK.
 
-%description -l pl
-Exporter::Easy pozwala pozbyæ siê harówki zwi±zanej z eksportowaniem
-symboli, pozwalaj±c wyeliminowaæ te fragmenty kodu, istniej±ce w
-ka¿dym module u¿ywaj±cym Exportera.
+%description -l pl.UTF-8
+Exporter::Easy pozwala pozbyÄ‡ siÄ™ harÃ³wki zwiÄ…zanej z eksportowaniem
+symboli, pozwalajÄ…c wyeliminowaÄ‡ te fragmenty kodu, istniejÄ…ce w
+kaÅ¼dym module uÅ¼ywajÄ…cym Exportera.
 
-Pozwala tak¿e na definiowanie znaczników w kontek¶cie innych
-znaczników, wiêc nie trzeba siê ju¿ martwiæ o wype³nianie @EXPORT_OK.
+Pozwala takÅ¼e na definiowanie znacznikÃ³w w kontekÅ›cie innych
+znacznikÃ³w, wiÄ™c nie trzeba siÄ™ juÅ¼ martwiÄ‡ o wypeÅ‚nianie @EXPORT_OK.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
