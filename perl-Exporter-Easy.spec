@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Exporter
 %define		pnam	Easy
+%include	/usr/lib/rpm/macros.perl
 Summary:	Exporter::Easy - takes the drudgery out of exporting symbols
 Summary(pl.UTF-8):	Exporter::Easy - przejmujący harówkę eksportowania symboli
 Name:		perl-Exporter-Easy
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	16f44909db2e85578ed2f26db490312b
+URL:		http://search.cpan.org/dist/Exporter-Easy/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
