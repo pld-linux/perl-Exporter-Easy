@@ -4,7 +4,6 @@
 
 %define		pdir	Exporter
 %define		pnam	Easy
-%include	/usr/lib/rpm/macros.perl
 Summary:	Exporter::Easy - takes the drudgery out of exporting symbols
 Summary(pl.UTF-8):	Exporter::Easy - przejmujący harówkę eksportowania symboli
 Name:		perl-Exporter-Easy
