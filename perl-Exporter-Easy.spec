@@ -7,13 +7,13 @@
 Summary:	Exporter::Easy - takes the drudgery out of exporting symbols
 Summary(pl.UTF-8):	Exporter::Easy - przejmujący harówkę eksportowania symboli
 Name:		perl-Exporter-Easy
-Version:	0.16
-Release:	3
+Version:	0.18
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	16f44909db2e85578ed2f26db490312b
+Source0:	https://www.cpan.org/authors/id/N/NE/NEILB/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	aaa738fc934725c12f54eaa3a1eace78
 URL:		http://search.cpan.org/dist/Exporter-Easy/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -40,7 +40,6 @@ znaczników, więc nie trzeba się już martwić o wypełnianie @EXPORT_OK.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} -pi -e "s/INSTALLDIRS => 'perl',//" Makefile.PL
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
@@ -58,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README CHANGES
+%doc README Changes
 %{perl_vendorlib}/%{pdir}/*.pm
 %{_mandir}/man3/*
